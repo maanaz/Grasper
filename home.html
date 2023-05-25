@@ -1,0 +1,101 @@
+{% extends "base.html" %} {%block title %}Changed{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <title>GRASPER</title>
+<head>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.hero a {
+  background-color: #e79b9b;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+  background-color: #b2cdce;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.feature {
+  width: 30%;
+  background-color: #f2f
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>GRASPER</title>
+    
+</head>
+<body>
+    
+    
+    <main>
+        <section class="hero">
+            <h2>Welcome to our quiz platform!</h2>
+            <p>Test your knowledge with our quizzes and challenges.</p>
+            <a href="/tab">Let's staart</a>
+        </section>
+        
+        
+    </main>
+    
+    
+</body>
+</html>
+
+
+      {% endblock %}

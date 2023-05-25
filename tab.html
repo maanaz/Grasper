@@ -1,0 +1,84 @@
+{% extends "base.html" %} {%block title %}Changed{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Categories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+        
+      background-color: #0d0d0d;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .container {
+        background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #090909;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      opacity: 0.6;
+      background-color: #0d0d0d;
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+    .box:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="box" onclick="location.href='Civil/l1.html';">
+      <h2>Civil Engineering</h2>
+    </div>
+    <div class="box" onclick="location.href='mech/l2.html';">
+      <h2>Mechanical Engineering</h2>
+    </div>
+    <div class="box" onclick="location.href='cs/l3.html';">
+      <h2>Computer Science Engineering</h2>
+    </div>
+    <div class="box" onclick="location.href='eee/l4.html';">
+      <h2>Electrical and Electronics Engineering</h2>
+    </div>
+    <div class="box" onclick="location.href='ec/l5.html';">
+      <h2>Electronics and Communication Engineering</h2>
+    </div>
+  </div>
+</body>
+</html>
+
+
+{% endblock %}
